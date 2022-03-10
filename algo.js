@@ -1,5 +1,7 @@
 import wordList from "./wordlist.js";
 
+const WORD_OFFSET = 2;
+
 var htmlDate = document.getElementById("date");
 var htmlWord = document.getElementById("word");
 
@@ -13,7 +15,7 @@ function Na(e, a) {
 function Da(date) {
   var index,
     s = Na(Ha, date);
-  return (index = s % wordList.length), wordList[index];
+  return (index = s % wordList.length), wordList[index + WORD_OFFSET];
 }
 
 console.log(Da(date));
