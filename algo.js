@@ -1,6 +1,6 @@
 import wordList from "./wordlist.js";
 
-const WORD_OFFSET = 2;
+const WORD_OFFSET = 8;
 
 var htmlDate = document.getElementById("date");
 var htmlWord = document.getElementById("word");
